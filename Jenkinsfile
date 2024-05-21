@@ -3,11 +3,11 @@ pipeline {
     
     tools{
         jdk 'jdk11'
-        maven 'maven3'
+        maven 'maven'
     }
     
     environment {
-        SCANNER_HOME=tool 'sonar-scanner'
+        SCANNER_HOME=tool 'sonarqube-scanner'
     }
     
     stages{
